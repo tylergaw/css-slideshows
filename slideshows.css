@@ -134,6 +134,25 @@ ul:nth-of-type(2) li:nth-of-type(3) img {
 	97%, 100% { left: -100%; }
 }
 
+@-moz-keyframes slideOne {
+	0%, 30% { left: 0; }
+	33%, 94% { left: -100%; }
+	94.0001%, 97% { left: 100%; }
+	97%, 100% { left: 0; }
+}
+
+@-moz-keyframes slideTwo {
+	0%, 30% { left: 100%; }
+	33%, 63% { left: 0; }
+	66%, 100% { left: -100%; }
+}
+
+@-moz-keyframes slideThree {
+	0%, 63% { left: 100%; }
+	66%, 94% { left: 0; }
+	97%, 100% { left: -100%; }
+}
+
 /* - General page styles -*/
 
 body {
