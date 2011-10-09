@@ -326,6 +326,10 @@ ul:first-of-type li:nth-of-type(3) {
 
 /* - Slide In/Out -*/
 
+ul:nth-of-type(2) {
+	z-index: 3;
+}
+
 ul:nth-of-type(2) img {
 	-webkit-animation-duration: 14s;
 	-webkit-animation-iteration-count: infinite;
@@ -333,27 +337,25 @@ ul:nth-of-type(2) img {
 	-moz-animation-duration: 14s;
 	-moz-animation-iteration-count: infinite;
 	-moz-animation-timing-function: ease;
+	position: relative;
 }
 
 ul:nth-of-type(2) li:nth-of-type(1) img {
 	-webkit-animation-name: slideOne;
 	-moz-animation-name: slideOne;
 	left: 0;
-	position: relative;
 }
 
 ul:nth-of-type(2) li:nth-of-type(2) img {
 	-webkit-animation-name: slideTwo;
 	-moz-animation-name: slideTwo;
 	left: 100%;
-	position: relative;
 }
 
 ul:nth-of-type(2) li:nth-of-type(3) img {
 	-webkit-animation-name: slideThree;
 	-moz-animation-name: slideThree;
-	left: 200%;
-	position: relative;
+	left: 100%;
 }
 
 @-webkit-keyframes slideOne {
