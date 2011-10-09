@@ -15,7 +15,12 @@ ul {
 	
 	ul:hover li,
 	ul:hover img {
+		/* 
+			NOTE: This property is being considered for removal from the spec 
+			@see: http://www.w3.org/TR/css3-animations/#the-animation-play-state-property-
+		*/
 		-webkit-animation-play-state: paused;
+		-moz-animation-play-state: paused;
 	}
 
 li {
