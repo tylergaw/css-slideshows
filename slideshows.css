@@ -2,10 +2,11 @@ ul {
 	background-color: #fff;
 	box-shadow: rgba(0, 0, 0, 0.75) 0 1px 12px;
 	display: inline-block;
+	left: 7%;
 	margin: 0;
-	padding: 71.5% 0 0 0;
+	padding: 61.3% 0 0 0;
 	position: relative;
-	width: 100%;
+	width: 85%;
 }
 	
 	ul:before {
@@ -51,9 +52,37 @@ li {
 	list-style: none inside;
 	overflow: hidden;
 	position: absolute;
-	top: 1.7%;
+	top: 1.9%;
 	width: 97%;
 }
+
+/* - Special styles for the Falling demo - */
+
+ul:last-of-type {
+	background-color: transparent;
+	display: inline-block;
+	margin: 0;
+	position: relative;
+}
+
+	ul:last-of-type li {
+		background-color: #fff;
+		/*box-shadow: rgba(0, 0, 0, 0.75) 0 1px 12px;*/
+		display: inline-block;
+		left: 0;
+		margin: 0;
+		padding: 1.5%;
+		top: 0;
+	}
+	
+	/*
+	ul:last-of-type li:last-child {
+		top: 20%;
+		-webkit-transform: rotate(-13deg);
+	}
+	*/
+
+
 
 /* - Fade In/Out -*/
 
@@ -200,8 +229,9 @@ body {
 
 body > div {
 	margin: 0 auto;
-	max-width: 860px;
-	width: 80%;
+	max-width: 960px;
+	overflow: hidden;
+	width: 95%;
 }
 
 header {
@@ -229,7 +259,7 @@ h2 {
 	font-size: 1em;
 	font-weight: 400;
 	margin: 4em 0 0.5em 0;
-	padding: 0;
+	padding: 0 0 0 7%;
 }
 
 	h2:first-of-type {
@@ -239,7 +269,7 @@ h2 {
 footer {
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	display: block;
-	margin-top: 1em;
+	margin-top: 2em;
 	padding: 1em 0 1.4em 0;
 	text-align: right;
 }
