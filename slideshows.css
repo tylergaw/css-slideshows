@@ -1,6 +1,6 @@
 ul {
 	background-color: #fff;
-	box-shadow: rgba(0, 0, 0, 0.7) 0 1px 8px;
+	box-shadow: rgba(0, 0, 0, 0.75) 0 1px 12px;
 	display: inline-block;
 	padding: 71.5% 0 0 0;
 	position: relative;
@@ -163,8 +163,8 @@ ul:nth-of-type(2) li:nth-of-type(3) img {
 
 body {
 	background-color: #1f1f1f;
-	color: #f1f1f1;
-	font-family: 'helvetica neue', helvetica, sans-serif;
+	color: #e2e2e2;
+	font-family: 'ff-dagny-web-pro-1', 'ff-dagny-web-pro-2', 'helvetica neue', helvetica, sans-serif;
 	font-size: 100%;
 	margin: 0;
 	padding: 0;
@@ -177,8 +177,9 @@ body > div {
 }
 
 h1 {
-	border-bottom: 6px solid #34311c;
-	font-size: 2em;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	font-size: 1.6em;
+	font-weight: 700;
 	margin: 0;
 	padding: 0.4em 0 0.3em 0;
 	text-shadow: rgba(255, 255, 255, 0.09) 0 1px 0;
@@ -187,25 +188,26 @@ h1 {
 
 h2 {
 	font-size: 1em;
-	margin: 1em 0 0 0;
+	font-weight: 400;
+	margin: 2.2em 0 0 0;
 	padding: 0;
 }
 
 p {
-	border-top: 4px solid #34311c;
-	box-shadow: #000 0 -1px 0;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	margin-top: 1em;
 	padding: 1em 0;
+	text-align: right;
 }
 
 a {
-	color: #303359;
+	color: #e3e3e3;
 	display: inline-block;
 	font-size: 0.8em;
 	text-decoration: none;
 }
 
 	a:hover {
-		background-color: #303359;
-		color: #faf9f1;
+		background-color: #fff;
+		color: #1f1f1f;
 	}
