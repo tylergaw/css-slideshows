@@ -12,6 +12,11 @@ ul {
 		margin: 0 auto;
 		width: 100%;
 	}
+	
+	ul:hover li,
+	ul:hover img {
+		-webkit-animation-play-state: paused;
+	}
 
 li {
 	left: 1.5%;
