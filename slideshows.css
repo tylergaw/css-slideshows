@@ -2,7 +2,7 @@ ul {
 	background-color: #fff;
 	box-shadow: rgba(0, 0, 0, 0.75) 0 1px 12px;
 	display: inline-block;
-	left: 7%;
+	left: 7.5%;
 	margin: 0;
 	padding: 61.3% 0 0 0;
 	position: relative;
@@ -60,14 +60,21 @@ li {
 
 ul:last-of-type {
 	background-color: transparent;
+	box-shadow: none;
 	display: inline-block;
 	margin: 0;
 	position: relative;
 }
 
 	ul:last-of-type li {
+		-webkit-animation-duration: 16s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: ease;
+		-moz-animation-duration: 16s;
+		-moz-animation-iteration-count: infinite;
+		-moz-animation-timing-function: ease;
 		background-color: #fff;
-		/*box-shadow: rgba(0, 0, 0, 0.75) 0 1px 12px;*/
+		box-shadow: rgba(0, 0, 0, 0.5) 0 0 2px;
 		display: inline-block;
 		left: 0;
 		margin: 0;
@@ -75,15 +82,104 @@ ul:last-of-type {
 		top: 0;
 	}
 	
-	/*
-	ul:last-of-type li:last-child {
-		top: 20%;
-		-webkit-transform: rotate(-13deg);
+	ul:last-of-type li:nth-of-type(1) {
+		-webkit-animation-name: fallThree;
+		-moz-animation-name: fallThree;
+		top: 2%;
+		-webkit-transform: rotate(-1deg);
 	}
-	*/
-
-
-
+	
+	ul:last-of-type li:nth-of-type(2) {
+		-webkit-animation-name: fallTwo;
+		-moz-animation-name: fallTwo;
+		top: 2%;
+		-webkit-transform: rotate(1.5deg);
+	}
+	
+	ul:last-of-type li:nth-of-type(3) {
+		-webkit-animation-name: fallOne;
+		-moz-animation-name: fallOne;
+		top: 1%;
+	}
+	
+	@-webkit-keyframes fallOne {
+		0%, 30% { 
+			opacity: 1; 
+			top: 1%;
+			-webkit-transform: rotate(0deg);
+		}
+		
+		35%, 94% { 
+			opacity: 0;
+			top: 120%;
+			-webkit-transform: rotate(-13deg);
+		}
+		
+		94.0001%, 96% { 
+			opacity: 0;
+			top: -100%;
+			-webkit-transform: rotate(-13deg);
+		}
+		
+		100% {
+			opacity: 1; 
+			top: 1%;
+			-webkit-transform: rotate(0deg);
+		}
+	}
+	
+	@-webkit-keyframes fallTwo {
+		0%, 65% { 
+			opacity: 1;
+			top: 2%;
+			-webkit-transform: rotate(1.5deg);
+		}
+		
+		70%, 94% { 
+			opacity: 0;
+			top: 120%;
+			-webkit-transform: rotate(13deg);
+		}
+		
+		94.0001%, 96% { 
+			opacity: 0;
+			top: -100%;
+			-webkit-transform: rotate(13deg);
+		}
+		
+		100% {
+			opacity: 1;
+			top: 2%;
+			-webkit-transform: rotate(1.5deg);
+		}
+	}
+	
+	@-webkit-keyframes fallThree {
+		0%, 95% { 
+			opacity: 1;
+			top: 2%;
+			-webkit-transform: rotate(-1deg);
+		}
+		
+		99% { 
+			opacity: 0;
+			top: 120%;
+			-webkit-transform: rotate(-10deg);
+		}
+		
+		99.0001%, 100% { 
+			opacity: 0;
+			top: -100%;
+			-webkit-transform: rotate(10deg);
+		}
+		
+		100% {
+			opacity: 1;
+			top: 2%;
+			-webkit-transform: rotate(-1deg);
+		}
+	}
+	
 /* - Fade In/Out -*/
 
 ul:first-of-type li {
@@ -237,6 +333,8 @@ body > div {
 header {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	display: block;
+	margin: 0 auto;
+	width: 85%;
 }
 
 	header p {
@@ -258,8 +356,9 @@ h1 {
 h2 {
 	font-size: 1em;
 	font-weight: 400;
-	margin: 4em 0 0.5em 0;
-	padding: 0 0 0 7%;
+	margin: 4em auto 0.5em auto;
+	padding: 0;
+	width: 85%;
 }
 
 	h2:first-of-type {
@@ -270,8 +369,10 @@ footer {
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	display: block;
 	margin-top: 2em;
+	margin: 2em auto 0 auto;
 	padding: 1em 0 1.4em 0;
 	text-align: right;
+	width: 85%;
 }
 
 a {
